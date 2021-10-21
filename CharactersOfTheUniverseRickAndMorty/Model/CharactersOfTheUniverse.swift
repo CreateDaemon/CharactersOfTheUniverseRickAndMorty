@@ -33,6 +33,20 @@ struct Character: Decodable {
     var created: String?
 }
 
+struct Info: Decodable {
+    
+    var count: Int?
+    var pages: Int?
+    var next: String?
+    var prev: String?
+}
+
+struct Characters: Decodable {
+    
+    var info: Info?
+    var results: [Character]?
+}
+
 struct Error: Decodable {
     
     var error: String
