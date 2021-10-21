@@ -14,6 +14,7 @@
 		E593DD572720892B006FD2EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E593DD562720892B006FD2EC /* Assets.xcassets */; };
 		E593DD5A2720892B006FD2EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E593DD582720892B006FD2EC /* LaunchScreen.storyboard */; };
 		E593DD62272089BA006FD2EC /* CharactersOfTheUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593DD61272089BA006FD2EC /* CharactersOfTheUniverse.swift */; };
+		E5A4AC7C2721AEEA00435B14 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E5A4AC7B2721AEEA00435B14 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E593DD592720892B006FD2EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E593DD5B2720892B006FD2EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E593DD61272089BA006FD2EC /* CharactersOfTheUniverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersOfTheUniverse.swift; sourceTree = "<group>"; };
+		E5A4AC7B2721AEEA00435B14 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				E517B1462721AB5500FF203D /* View */,
 				E517B1472721AB5E00FF203D /* Controller */,
 				E517B1492721AB7900FF203D /* Supported Files */,
+				E5A4AC7B2721AEEA00435B14 /* .gitignore */,
 			);
 			path = CharactersOfTheUniverseRickAndMorty;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A4AC7C2721AEEA00435B14 /* .gitignore in Resources */,
 				E593DD5A2720892B006FD2EC /* LaunchScreen.storyboard in Resources */,
 				E593DD572720892B006FD2EC /* Assets.xcassets in Resources */,
 				E593DD5527208929006FD2EC /* Main.storyboard in Resources */,
