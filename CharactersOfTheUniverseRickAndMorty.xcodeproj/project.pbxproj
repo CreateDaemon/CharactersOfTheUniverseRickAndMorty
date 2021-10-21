@@ -44,8 +44,8 @@
 		E517B1462721AB5500FF203D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E593DD582720892B006FD2EC /* LaunchScreen.storyboard */,
 				E593DD5327208929006FD2EC /* Main.storyboard */,
+				E593DD582720892B006FD2EC /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

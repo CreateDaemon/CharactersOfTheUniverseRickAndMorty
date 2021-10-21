@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private var character = Character()
+    private var flagJSON = false
     
     @IBOutlet var imageCharacter: UIImageView!
     @IBOutlet var nameCharacter: UILabel!
@@ -26,9 +27,10 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        nameCharacter.text = character.name ?? "No name"
+        while !flagJSON {}
         
-        getImageCharacter(fromURLString: nil)
+        nameCharacter.text = character.name ?? "No name"
+        getImageCharacter(fromURLString: character.image)
     }
 
     private func getDataFromJSON() {
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
             
             do {
                 self.character = try JSONDecoder().decode(Character.self, from: data)
+                self.flagJSON = true
             } catch {
                 let error: Error = try! JSONDecoder().decode(Error.self, from: data)
                 // DOTO - print error
@@ -49,14 +52,11 @@ class ViewController: UIViewController {
     }
     
     private func getImageCharacter(fromURLString urlString: String?) {
-        
+
         DispatchQueue.global().async {
             guard let urlString = urlString,
                   let url = URL(string: urlString),
-                  let dataURL = try? Data(contentsOf: url)
-            else {
-                return
-            }
+                  let dataURL = try? Data(contentsOf: url) else { return }
 
             DispatchQueue.main.async {
                 self.imageCharacter.image = UIImage(data: dataURL)
