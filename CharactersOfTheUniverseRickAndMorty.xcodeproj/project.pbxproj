@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E52625482721CA2A00A403DC /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52625472721CA2900A403DC /* MainTableViewController.swift */; };
+		E52625482721CA2A00A403DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52625472721CA2900A403DC /* MainViewController.swift */; };
 		E526254A2721CC2600A403DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52625492721CC2600A403DC /* TableViewCell.swift */; };
+		E57560A62722D6310054B765 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57560A52722D6310054B765 /* DetailsViewController.swift */; };
 		E593DD4E27208929006FD2EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593DD4D27208929006FD2EC /* AppDelegate.swift */; };
 		E593DD5027208929006FD2EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593DD4F27208929006FD2EC /* SceneDelegate.swift */; };
 		E593DD5527208929006FD2EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E593DD5327208929006FD2EC /* Main.storyboard */; };
@@ -19,8 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E52625472721CA2900A403DC /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		E52625472721CA2900A403DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E52625492721CC2600A403DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E57560A52722D6310054B765 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E593DD4A27208929006FD2EC /* CharactersOfTheUniverseRickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharactersOfTheUniverseRickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E593DD4D27208929006FD2EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E593DD4F27208929006FD2EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +59,8 @@
 			children = (
 				E593DD4D27208929006FD2EC /* AppDelegate.swift */,
 				E593DD4F27208929006FD2EC /* SceneDelegate.swift */,
-				E52625472721CA2900A403DC /* MainTableViewController.swift */,
+				E52625472721CA2900A403DC /* MainViewController.swift */,
+				E57560A52722D6310054B765 /* DetailsViewController.swift */,
 				E52625492721CC2600A403DC /* TableViewCell.swift */,
 			);
 			path = Controller;
@@ -183,8 +186,9 @@
 				E593DD4E27208929006FD2EC /* AppDelegate.swift in Sources */,
 				E593DD5027208929006FD2EC /* SceneDelegate.swift in Sources */,
 				E526254A2721CC2600A403DC /* TableViewCell.swift in Sources */,
-				E52625482721CA2A00A403DC /* MainTableViewController.swift in Sources */,
+				E52625482721CA2A00A403DC /* MainViewController.swift in Sources */,
 				E593DD62272089BA006FD2EC /* CharactersOfTheUniverse.swift in Sources */,
+				E57560A62722D6310054B765 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
