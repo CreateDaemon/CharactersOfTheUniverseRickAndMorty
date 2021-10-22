@@ -52,7 +52,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 }
             } catch {
                 let error: Error = try! JSONDecoder().decode(Error.self, from: data)
-                self.tableView.reloadData()
                 print(error.error)
             }
         }.resume()
