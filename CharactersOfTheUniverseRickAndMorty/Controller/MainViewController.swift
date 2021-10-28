@@ -149,17 +149,30 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
 
         cell.nameHero.text = "Name: \(characters[indexPath.row].name)"
-        cell.statusHero.text = "Status: \(characters[indexPath.row].status)"
-        cell.genderHero.text = "Gender: \(characters[indexPath.row].gender)"
-        
-        DispatchQueue.global().async {
-            guard let data = self.networkManager.getImageData(forHero: self.characters[indexPath.row].imageString) else { return }
-            
-            DispatchQueue.main.async {
-                cell.imageHero.image = UIImage(data: data)
-            }
+        //  Change color(green, red or default) for satus
+        let status = characters[indexPath.row].status
+        switch status {
+        case "Alive":
+            cell.statusHero.attributedText = attributedString(fullLine: "Status: \(status)",
+                                                              lineWithColor: status,
+                                                              color: .green)
+        case "Dead":
+            cell.statusHero.attributedText = attributedString(fullLine: "Status: \(status)",
+                                                              lineWithColor: status,
+                                                              color: .red)
+        default: cell.statusHero.text = "Status: \(status)"
         }
+        
+        cell.genderHero.text = "Gender: \(characters[indexPath.row].gender)"
+        cell.imageHero.fetchImage(forURL: characters[indexPath.row].imageString)
 
         return cell
+    }
+    
+    private func attributedString(fullLine line: String, lineWithColor lineColor: String, color: UIColor) -> NSMutableAttributedString {
+        
+        let result = NSMutableAttributedString(string: line)
+        result.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSString(string: line).range(of: lineColor))
+        return result
     }
 }
